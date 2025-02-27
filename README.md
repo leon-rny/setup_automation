@@ -15,7 +15,7 @@ The measurement process follows a structured workflow:
    - Optical Switch: **Keysight**
    - Voltage Source: **Keithley**
    - Temperature Controller: **ITC4000**
-   - APT Motor Controllers and Nanotrak
+   - **APT Motor Controllers and Nanotrak**
 
 2. **Measurement Loop Execution**: The system executes a nested loop structure:
    - Set the current using the **Keithley** source
@@ -37,5 +37,11 @@ A graphical user interface (GUI) built with **PyQt5** facilitates user interacti
 - **Live Monitoring**: Real-time visualization of measurement data
 - **Motor Control**: Adjust fiber positions via APT controllers
 - **Coupling Check**: Validate optimal fiber alignment using Gaussian fitting
+
 ![GUI Screenshot 1](images/GUI_tab_1.png)
 ![GUI Screenshot 2](images/GUI_tab_2.png)
+
+## Quality Control of Waveguide Facets
+With the new measurement process, it is now possible to assess the **quality of waveguide facets**. By performing **2D coupling scans**, variations in the coupling efficiency can be visualized and analyzed. The generated power distribution map allows for the detection of defects or irregularities in the waveguide facets, ensuring a more precise alignment and improving overall measurement reliability.
+
+![2D Coupling Scan](images/coupling_2d.png)
