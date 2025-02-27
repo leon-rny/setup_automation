@@ -9,7 +9,7 @@ This repository contains the code for **automating a measurement setup** for the
 - GUI for easy operation 
 
 ## GUI
-![GUI Screenshot 2](images/GUI_tab_2.pdf)
+![GUI Screenshot 2](images/GUI_tab_2.png)
 
 ## Measurement Principle
 
