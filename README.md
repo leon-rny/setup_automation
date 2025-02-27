@@ -9,10 +9,12 @@ This repository contains the code for **automating a measurement setup** for the
 - GUI for easy operation 
 
 ## GUI
+![GUI Screenshot 1](images/GUI_tab_1.png)
 ![GUI Screenshot 2](images/GUI_tab_2.png)
 
 ## Measurement Principle
-
+![Measurement Process](images/measurement_process.png)
+![Measurement Loop](images/measurement_loop.png)
 The system measures the **insertion loss (IL)** of AWGs across different channels and records the spectral characteristics of the components. **Automation** reduces manual effort and increases the reproducibility of results.
 
 ### Functionality
