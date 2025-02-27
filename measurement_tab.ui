@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1713</width>
+    <height>1141</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Frutiger LT Com</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QFrame" name="KeithleyContainer">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>551</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <widget class="QLabel" name="stepsVoltageLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>steps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="maxVoltageLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>max. current [mA]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="minVoltageLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>min. current [mA]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Keithley">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Keithley/TEC</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="minVoltage">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="maxVoltage">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>90.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="stepsVoltage">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <number>35</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="StrombegrenzungLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>compliance voltage [V]</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="Strombegrenzung">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>12.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="StrombegrenzungLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>temperature set point [°C]</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="tempSetPoint">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="decimals">
+     <number>3</number>
+    </property>
+    <property name="minimum">
+     <double>-20.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>150.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>25.000000000000000</double>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="StopLoopButton">
+   <property name="geometry">
+    <rect>
+     <x>1540</x>
+     <y>20</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>End Loop</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="StatusUpdate">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>20</y>
+     <width>511</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Frutiger LT Com'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Measurement status updates:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="EXFOContainer">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>440</y>
+     <width>551</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <widget class="QLabel" name="startwlLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>start wavelength [nm]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="endwlLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>end wavelength [nm]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resolutionwlLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>wavelength resolution [pm]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="EXFO">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>EXFO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="opticalPowerLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>optical power [dBm]</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="startWavelength">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>2000.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>1300.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="endWavelength">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>2000.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>1600.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="wavelengthResolution">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="decimals">
+     <number>3</number>
+    </property>
+    <property name="maximum">
+     <double>250.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>10.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="opticalPower">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="opticalPowerLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>scan speed [nm/s]</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="scanSpeed">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>250.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>40.000000000000000</double>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="AddressesContainer">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>551</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <widget class="QLabel" name="Addresses">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Addresses</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lowerSwitchAddLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lower optical Switch (IP)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="UpperSwitchAddLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Upper optical Switch (IP)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TempCtrlAddLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Temperatur controller (USB-VISA)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="KeithleyAddLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Keithley (GPIB)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="EXFOAddLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>EXFO (IP)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LowerSwitchAdd">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>192.168.254.6</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="UpperSwitchAdd">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>192.168.254.7</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="KeithleyAdd">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>26</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="EXFOAdd">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>192.168.254.10</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TempCtrlAdd">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>USB::4883::32842::M00934166</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="OpticalSwitchContainer">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>210</y>
+     <width>551</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <widget class="QLabel" name="OpticalSwitches">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Optical Switches</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WL_1_TELabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1260nm -  1360nm TE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WL_1_TMLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1260nm -  1360nm TM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WL_2_TELabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1350nm -  1510nm TE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WL_2_TMLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1350nm -  1510nm TM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WL_3_TELabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1500nm -  1630nm TE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WL_3_TMLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1500nm -  1630nm TM</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WL_1_TE">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>8,8</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WL_1_TM">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>7,7</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WL_2_TE">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>4,5</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WL_2_TM">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>3,6</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WL_3_TE">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2,1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WL_3_TM">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>190</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1,2</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="ClearButton">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>140</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="InitializeButton">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>20</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Initialize</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="StartLoopButton">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>20</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Start Loop</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LoadSettingsButton">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>20</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Load Settings</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SaveSettingsButton">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>80</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Save Settings</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ContinueLoopButton">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>140</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Continue Loop</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DeinitializeButton">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>80</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Deinitialize</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PauseLoopButton">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>80</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pause Loop</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="APTContainer">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>210</y>
+     <width>551</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <widget class="QLabel" name="APT">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>APT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inputWaveguideDistanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>input waveguide distance [mm]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputWaveguideDistanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>output waveguide distance [mm]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="chipDistanceLLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>chip distance [mm]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="numberOfChipsLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>number of chips</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inputsPerChipLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>inputs per chip</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputsPerChipLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>outputs per chip</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="inputWaveguideDistance">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="decimals">
+     <number>6</number>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="outputWaveguideDistance">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="decimals">
+     <number>6</number>
+    </property>
+    <property name="value">
+     <double>0.330000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="chipDistance">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="decimals">
+     <number>6</number>
+    </property>
+    <property name="value">
+     <double>1.330000000000000</double>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="numberOfChips">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <number>4</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="inputsPerChip">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="outputsPerChip">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>190</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <number>4</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>440</y>
+     <width>551</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="CouplingCheck">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Coupling Check</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="couplingThresholdLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Coupling Treshhold [dB]</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="couplingThreshold">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gausMinLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>min. Gauß width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gausMaxLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>max. Gauß width</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="gausMin">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>0.800000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="gausMax">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>1.500000000000000</double>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox1D">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+      <hintingpreference>PreferFullHinting</hintingpreference>
+     </font>
+    </property>
+    <property name="text">
+     <string>1D</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox2D">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2D</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ScanTypeLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Scan type</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="ILButton">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>140</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Frutiger LT Com</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>IL-Measurement</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="PlotIL">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>640</y>
+     <width>551</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="PlotCoupling">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>640</y>
+     <width>551</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="General">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>381</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Automatic Waveguide-Measurements</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="General1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fraunhofer Heinrich-Hertz-Institute</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="General4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ramin Leon Neymeyer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="General3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Research Group: Hybrid Integration and Sensing</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="General2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Frutiger LT Com</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Deparment: Photonic Components</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="Logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>151</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="PlotMotor">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>640</y>
+     <width>551</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>LoadSettingsButton</tabstop>
+  <tabstop>SaveSettingsButton</tabstop>
+  <tabstop>ClearButton</tabstop>
+  <tabstop>LowerSwitchAdd</tabstop>
+  <tabstop>UpperSwitchAdd</tabstop>
+  <tabstop>TempCtrlAdd</tabstop>
+  <tabstop>KeithleyAdd</tabstop>
+  <tabstop>EXFOAdd</tabstop>
+  <tabstop>chipDistance</tabstop>
+  <tabstop>inputWaveguideDistance</tabstop>
+  <tabstop>outputWaveguideDistance</tabstop>
+  <tabstop>numberOfChips</tabstop>
+  <tabstop>inputsPerChip</tabstop>
+  <tabstop>outputsPerChip</tabstop>
+  <tabstop>WL_1_TE</tabstop>
+  <tabstop>WL_1_TM</tabstop>
+  <tabstop>WL_2_TE</tabstop>
+  <tabstop>WL_2_TM</tabstop>
+  <tabstop>WL_3_TE</tabstop>
+  <tabstop>WL_3_TM</tabstop>
+  <tabstop>minVoltage</tabstop>
+  <tabstop>maxVoltage</tabstop>
+  <tabstop>stepsVoltage</tabstop>
+  <tabstop>Strombegrenzung</tabstop>
+  <tabstop>startWavelength</tabstop>
+  <tabstop>endWavelength</tabstop>
+  <tabstop>wavelengthResolution</tabstop>
+  <tabstop>opticalPower</tabstop>
+  <tabstop>couplingThreshold</tabstop>
+  <tabstop>gausMin</tabstop>
+  <tabstop>gausMax</tabstop>
+  <tabstop>checkBox1D</tabstop>
+  <tabstop>checkBox2D</tabstop>
+  <tabstop>InitializeButton</tabstop>
+  <tabstop>StartLoopButton</tabstop>
+  <tabstop>PauseLoopButton</tabstop>
+  <tabstop>ContinueLoopButton</tabstop>
+  <tabstop>StopLoopButton</tabstop>
+  <tabstop>ILButton</tabstop>
+  <tabstop>DeinitializeButton</tabstop>
+  <tabstop>StatusUpdate</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
